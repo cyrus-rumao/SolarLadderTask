@@ -40,7 +40,7 @@ const Home = () => {
 			<button
 				onClick={createNewCanvas}
 				className="mb-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
-				➕ Create New Canvas
+				Create New Canvas
 			</button>
 			{canvases.length === 0 ? (
 				<p className="text-gray-500">No canvases found</p>

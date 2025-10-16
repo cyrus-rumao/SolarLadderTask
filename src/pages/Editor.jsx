@@ -2,7 +2,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { db } from '../config/firebase';
-import { ref, onValue, set } from 'firebase/database';
+import { ref, onValue} from 'firebase/database';
 import CanvasBoard from '../components/CanvasBoard';
 
 const Editor = () => {
@@ -19,9 +19,6 @@ const Editor = () => {
 		});
 	}, [id]);
 
-	const handleSave = (jsonData) => {
-		set(ref(db, `canvas/${id}/json`), jsonData);
-	};
 
 	return (
 		<div className="min-h-screen flex flex-col">
@@ -37,9 +34,7 @@ const Editor = () => {
 			</div>
 
 			<CanvasBoard
-				savedData={canvasData?.json}
 				canvasId={id}
-				onSave={handleSave}
 			/>
 		</div>
 	);
