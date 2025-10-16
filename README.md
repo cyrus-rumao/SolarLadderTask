@@ -33,9 +33,17 @@ This is a real-time, collaborative whiteboard application built using **React**,
 1.  Install project dependencies:
     ```bash
     npm install fabric firebase react
+
+
+
+
     ```
 2.  Configure your **Firebase credentials** (usually in a `config/firebase.js` file and/or `.env` variables).
 3.  Run the application:
     ```bash
     npm start
     ```
+
+
+
+Demo Video : https://drive.google.com/file/d/1A1NKztuI8pDSyyLN8vSWNEz4St_iE3MU/view?usp=sharing
