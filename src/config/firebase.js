@@ -8,15 +8,14 @@ import { getDatabase } from 'firebase/database';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-	apiKey: 'AIzaSyAwQhE9GyUssLXZlZTf2zxfOndZwy54pxI',
-	authDomain: 'solarladder-assignment.firebaseapp.com',
-	projectId: 'solarladder-assignment',
-	databaseURL:
-		'https://solarladder-assignment-default-rtdb.asia-southeast1.firebasedatabase.app/',
-	storageBucket: 'solarladder-assignment.firebasestorage.app',
-	messagingSenderId: '106362729419',
-	appId: '1:106362729419:web:72c57b3ba429fbbddefc4e',
-	measurementId: 'G-SLYBXKX4KF',
+	apiKey: import.meta.env.VITE_API_KEY,
+	authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+	projectId: import.meta.env.VITE_PROJECT_ID,
+	databaseURL: import.meta.env.VITE_DATABASE_URL,
+	storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+	messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+	appId: import.meta.env.VITE_APP_ID,
+	measurementId: import.meta.env.VITE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
