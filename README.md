@@ -8,9 +8,6 @@ This is a real-time, collaborative whiteboard application built using **React**,
 
 - **Real-time Synchronization:** Canvas state is synchronized across multiple users via Firebase.
 - **Drawing & Shapes:** Supports Pen drawing, Rectangles, Circles, and editable Text (`IText`).
-- **Boundary Enforcement:** Objects cannot be moved, dragged, or scaled outside the visible bounds of the canvas.
-- **Object Control:** Delete selected objects using the "Delete" or "Backspace" key, or the on-screen button.
-- **IText Stability:** Includes fixes for persistent cursor/drag issues associated with `IText` objects in Fabric.js.
 - **Data Integrity:** Cleans Fabric.js JSON output to remove `undefined` values, preventing Firebase Realtime Database errors.
 - **Export:** Allows the canvas content to be exported as a PNG image.
 
